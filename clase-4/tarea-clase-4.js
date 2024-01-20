@@ -21,12 +21,12 @@
 // ej.: calcularPromedio([10,5,4,2,8])
 
 
-function tarea4() {
+function tarea4 () {
     ejercicio1 ();
     ejercicio1Solucion2 ();
     ejercicio2 ();
     ejercicio3 ();
-    ejercicio4 ()
+    ejercicio4 ();
 }
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
@@ -38,22 +38,16 @@ function ejercicio1 () {
     }
 }
 
+// Le agregue prompts para poder elegir cada cuantos numeros contar, desde que número y hasta donde.
+
 function ejercicio1Solucion2 () {
     
     let contador = Number(prompt('¿Desde qué número querés empezar?'));
     const CADA_CUANTO = Number(prompt('¿Cada cuántos números querés contar?'));
     const HASTA_CUANTO = Number(prompt('¿Hasta qué número querés contar?'));
 
-    contador--;
-    while (contador <= HASTA_CUANTO) {
-         for (let i=1; i<=CADA_CUANTO;i++){
-            if (i === 1){
-                contador++;
-                console.log(contador);
-            } else {
-                contador++;
-            }
-        }
+    for (let i=contador; i<=HASTA_CUANTO; i+=CADA_CUANTO){
+        console.log(i);
     }
 
 }
