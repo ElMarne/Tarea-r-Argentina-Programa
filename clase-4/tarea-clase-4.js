@@ -22,7 +22,7 @@
 
 
 function tarea4() {
-    //ejercicio1 ();
+    ejercicio1 ();
     ejercicio1Solucion2 ();
     ejercicio2 ();
     ejercicio3 ();
@@ -33,20 +33,9 @@ function tarea4() {
 
 function ejercicio1 () {
     
-    let contador = 3;
-    while (contador <= 22) {
-         for (let i=1; i<=3;i++){
-            if (i === 3){
-                contador++;
-                if (contador <= 22) {
-                    console.log(contador)
-                }
-            } else {
-                contador++;
-            }
-        }
+    for (let i=3; i<=22; i+=3){
+        console.log(i);
     }
-
 }
 
 function ejercicio1Solucion2 () {
