@@ -4,6 +4,8 @@ function desafios () {
   //desafio3 ();
   //desafio4 ();
   desafio5 ();
+  desafio5V2 ();
+  desafio5V3 ();
 
 }
 
@@ -51,12 +53,29 @@ function desafio5 () {
   const numeros1Al10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   let suma = 0;
 
-  for (i = 0; i < 10; i++) {
+  for (i = 0; i < numeros1Al10.length; i++) {
     suma += numeros1Al10[i];
   }
 
   console.log(suma)
 }
+
+function desafio5V2 () {
+  const numeros1Al10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  console.log(numeros1Al10.reduce((accumulator, currentValue) => accumulator + currentValue, 0))
+}
+
+function desafio5V3 () {
+  const numeros1Al10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let suma = 0;
+
+  for (const numero of numeros1Al10) {
+    suma += numero;
+  }
+
+  console.log(suma)
+}
+
 
 desafios ();
 
