@@ -1,19 +1,12 @@
 function desafios () {
   desafio1 ();
-<<<<<<< Updated upstream
-
-=======
   desafio2 ();
->>>>>>> Stashed changes
 
 }
 
 // Desafío de programación #1: Imprimí los números del 1 al 10
 
 function desafio1 () {
-<<<<<<< Updated upstream
-  for (i = 1; i <11; i++) {
-=======
   for (i = 1; i < 11; i++) {
     console.log(i)
   }
@@ -23,17 +16,12 @@ function desafio1 () {
 
 function desafio2 () {
   for (i = 1; i <= 100; i += 2) {
->>>>>>> Stashed changes
     console.log(i)
   }
 }
 
 
-<<<<<<< Updated upstream
 
-
-=======
->>>>>>> Stashed changes
 desafios ();
 
 //Link original y créditos a https://github.com/CodeGuppyPrograms/CodingChallenges (contiene las respuestas).
