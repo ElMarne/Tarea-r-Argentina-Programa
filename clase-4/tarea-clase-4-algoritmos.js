@@ -1,3 +1,22 @@
+function desafios () {
+  desafio1 ();
+
+
+}
+
+// Desafío de programación #1: Imprimí los números del 1 al 10
+
+function desafio1 () {
+  for (i = 1; i <11; i++) {
+    console.log(i)
+  }
+}
+
+
+
+
+desafios ();
+
 //Link original y créditos a https://github.com/CodeGuppyPrograms/CodingChallenges (contiene las respuestas).
 
 /*
