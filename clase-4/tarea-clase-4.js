@@ -26,6 +26,7 @@ function tarea4 () {
     ejercicio1Solucion2 ();
     ejercicio2 ();
     ejercicio3 ();
+    fizzBuzzMejorado ();
     ejercicio4 ();
 }
 
@@ -78,6 +79,8 @@ function ejercicio2() {
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
 
+
+//FizzBuzz CLÁSICO
 function ejercicio3 () {
     for(let i = 1; i <= 50; i++) {
         if (i% 3 === 0 && i%5 === 0){
@@ -89,11 +92,27 @@ function ejercicio3 () {
         } else {
             console.log(i);
         }
-
     }
-
-
 }
+
+//FizzBuzz Mejorado
+function fizzBuzzMejorado () {
+    for(let i = 1; i <= 50; i++) {
+        
+        let texto = "";
+        
+        if (i% 3 === 0){
+            texto = "Fizz"
+        }
+        
+        if (i% 5 === 0) {
+            texto += "Buzz"
+        }
+
+        console.log(texto || i)
+    }
+}
+
 
 // Calcular el promedio de todos los números en un array de números. (y ponerlo en una función)
 // ej.: calcularPromedio([10,5,4,2,8])
