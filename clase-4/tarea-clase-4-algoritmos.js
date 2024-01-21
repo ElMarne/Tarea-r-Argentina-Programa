@@ -3,6 +3,8 @@ function desafios () {
   //desafio2 ();
   //desafio3 ();
   //desafio4 ();
+  desafio5 ();
+
 }
 
 // Desafío de programación #1: Imprimí los números del 1 al 10
@@ -44,6 +46,17 @@ function tablaDeMultiplicar (n, nLimite = 13) {
 }
 
 //Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
+
+function desafio5 () {
+  const numeros1Al10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let suma = 0;
+
+  for (i = 0; i < 10; i++) {
+    suma += numeros1Al10[i];
+  }
+
+  console.log(suma)
+}
 
 desafios ();
 
