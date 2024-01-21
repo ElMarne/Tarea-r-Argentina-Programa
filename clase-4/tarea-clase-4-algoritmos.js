@@ -2,6 +2,7 @@ function desafios () {
   desafio1 ();
   desafio2 ();
   desafio3 ();
+  desafio4 ();
 }
 
 // Desafío de programación #1: Imprimí los números del 1 al 10
@@ -23,11 +24,26 @@ function desafio2 () {
 // Desafío de programación #3: Imprimí la tabla de multiplicación del 7
 
 function desafio3 () {
-  for (i = 0; i <= 13; i++) {
-    console.log(`7x${i} =${7 * i}`)
+  tablaDeMultiplicar (7);
+}
+
+// Desafío de programación #4: Imprimí todas las tablas de multiplicación del 1 al 9
+
+function desafio4 () {
+  
+  for (k = 1; k < 10 ; k++) {
+    tablaDeMultiplicar (k, 9);
   }
 }
 
+
+function tablaDeMultiplicar (n, nLimite = 13) {
+  for (i = 0; i <= nLimite; i++) {
+    console.log(`${n}x${i} = ${n * i}`)
+  }
+}
+
+//Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
 
 desafios ();
 
