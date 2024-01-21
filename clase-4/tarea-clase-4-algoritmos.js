@@ -1,3 +1,84 @@
+function desafios () {
+  //desafio1 ();
+  //desafio2 ();
+  //desafio3 ();
+  //desafio4 ();
+  desafio5 ();
+  desafio5V2 ();
+  desafio5V3 ();
+
+}
+
+// Desafío de programación #1: Imprimí los números del 1 al 10
+
+function desafio1 () {
+  for (i = 1; i < 11; i++) {
+    console.log(i)
+  }
+}
+
+// Desafío de programación #2: Imprimí los números impares del 1 al 100
+
+function desafio2 () {
+  for (i = 1; i <= 100; i += 2) {
+    console.log(i)
+  }
+}
+
+// Desafío de programación #3: Imprimí la tabla de multiplicación del 7
+
+function desafio3 () {
+  tablaDeMultiplicar (7);
+}
+
+// Desafío de programación #4: Imprimí todas las tablas de multiplicación del 1 al 9
+
+function desafio4 () {
+  
+  for (k = 1; k < 10 ; k++) {
+    tablaDeMultiplicar (k, 9);
+  }
+}
+
+
+function tablaDeMultiplicar (n, nLimite = 13) {
+  for (i = 0; i <= nLimite; i++) {
+    console.log(`${n}x${i} = ${n * i}`)
+  }
+}
+
+//Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
+
+function desafio5 () {
+  const numeros1Al10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let suma = 0;
+
+  for (i = 0; i < numeros1Al10.length; i++) {
+    suma += numeros1Al10[i];
+  }
+
+  console.log(suma)
+}
+
+function desafio5V2 () {
+  const numeros1Al10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  console.log(numeros1Al10.reduce((accumulator, currentValue) => accumulator + currentValue, 0))
+}
+
+function desafio5V3 () {
+  const numeros1Al10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let suma = 0;
+
+  for (const numero of numeros1Al10) {
+    suma += numero;
+  }
+
+  console.log(suma)
+}
+
+
+desafios ();
+
 //Link original y créditos a https://github.com/CodeGuppyPrograms/CodingChallenges (contiene las respuestas).
 
 /*
