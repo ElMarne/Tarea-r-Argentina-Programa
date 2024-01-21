@@ -1,8 +1,8 @@
 function desafios () {
-  desafio1 ();
-  desafio2 ();
-  desafio3 ();
-  desafio4 ();
+  //desafio1 ();
+  //desafio2 ();
+  //desafio3 ();
+  //desafio4 ();
 }
 
 // Desafío de programación #1: Imprimí los números del 1 al 10
