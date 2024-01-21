@@ -21,33 +21,25 @@
 // ej.: calcularPromedio([10,5,4,2,8])
 
 
-function tarea4() {
-    //ejercicio1 ();
+function tarea4 () {
+    ejercicio1 ();
     ejercicio1Solucion2 ();
     ejercicio2 ();
     ejercicio3 ();
-    ejercicio4 ()
+    fizzBuzzMejorado ();
+    ejercicio4 ();
 }
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
 function ejercicio1 () {
     
-    let contador = 3;
-    while (contador <= 22) {
-         for (let i=1; i<=3;i++){
-            if (i === 3){
-                contador++;
-                if (contador <= 22) {
-                    console.log(contador)
-                }
-            } else {
-                contador++;
-            }
-        }
+    for (let i=3; i<=22; i+=3){
+        console.log(i);
     }
-
 }
+
+// Le agregue prompts para poder elegir cada cuantos numeros contar, desde que número y hasta donde.
 
 function ejercicio1Solucion2 () {
     
@@ -55,16 +47,8 @@ function ejercicio1Solucion2 () {
     const CADA_CUANTO = Number(prompt('¿Cada cuántos números querés contar?'));
     const HASTA_CUANTO = Number(prompt('¿Hasta qué número querés contar?'));
 
-    contador--;
-    while (contador <= HASTA_CUANTO) {
-         for (let i=1; i<=CADA_CUANTO;i++){
-            if (i === 1){
-                contador++;
-                console.log(contador);
-            } else {
-                contador++;
-            }
-        }
+    for (let i=contador; i<=HASTA_CUANTO; i+=CADA_CUANTO){
+        console.log(i);
     }
 
 }
@@ -73,12 +57,12 @@ function ejercicio1Solucion2 () {
 //       diez a uno.
 
 function ejercicio2() {
-    let contador = 10;
+    let i = 10;
     const archivadorDeNumeros = [];
-    while (contador >=1) {
-        console.log(contador);
-        archivadorDeNumeros.push(contador);
-        contador--;
+    while (i >=1) {
+        console.log(i);
+        archivadorDeNumeros.push(i);
+        i--;
     }
     console.log(archivadorDeNumeros)
 }
@@ -95,6 +79,8 @@ function ejercicio2() {
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
 
+
+//FizzBuzz CLÁSICO
 function ejercicio3 () {
     for(let i = 1; i <= 50; i++) {
         if (i% 3 === 0 && i%5 === 0){
@@ -106,11 +92,27 @@ function ejercicio3 () {
         } else {
             console.log(i);
         }
-
     }
-
-
 }
+
+//FizzBuzz Mejorado
+function fizzBuzzMejorado () {
+    for(let i = 1; i <= 50; i++) {
+        
+        let texto = "";
+        
+        if (i% 3 === 0){
+            texto = "Fizz"
+        }
+        
+        if (i% 5 === 0) {
+            texto += "Buzz"
+        }
+
+        console.log(texto || i)
+    }
+}
+
 
 // Calcular el promedio de todos los números en un array de números. (y ponerlo en una función)
 // ej.: calcularPromedio([10,5,4,2,8])
