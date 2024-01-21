@@ -57,12 +57,12 @@ function ejercicio1Solucion2 () {
 //       diez a uno.
 
 function ejercicio2() {
-    let contador = 10;
+    let i = 10;
     const archivadorDeNumeros = [];
-    while (contador >=1) {
-        console.log(contador);
-        archivadorDeNumeros.push(contador);
-        contador--;
+    while (i >=1) {
+        console.log(i);
+        archivadorDeNumeros.push(i);
+        i--;
     }
     console.log(archivadorDeNumeros)
 }
