@@ -7,6 +7,9 @@ function desafios () {
   desafio5V2 ();
   desafio5V3 ();
   desafio6 ();
+  desafio7 ();
+  desafio7V2 ()
+
 
 }
 
@@ -91,6 +94,39 @@ function calcularFactorial (numero) {
   return numero;
 }
 
+// Desafío de programación #7: Calcula la suma de todos los números impares mayores que 10 y menores que 30
+
+function desafio7 () {
+  let suma = 0;
+  for (i= 11; i < 30; i += 2) {
+    suma += i;
+  }
+
+  console.log(suma)
+}
+
+function desafio7V2 () {
+
+  console.log(sumaDeNumerosImpares (10, 30))
+}
+
+function sumaDeNumerosImpares (desde, hasta) {
+  if (desde % 2 === 0) {
+    desde++;
+  } else {
+    desde += 2;
+  }
+
+  let suma = 0;
+  for (i= desde; i < hasta; i += 2) {
+    suma += i;
+  }
+
+  return suma;
+}
+
+
+// Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
 
 
 desafios ();
