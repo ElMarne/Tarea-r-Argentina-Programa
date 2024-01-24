@@ -6,6 +6,7 @@ function desafios () {
   desafio5 ();
   desafio5V2 ();
   desafio5V3 ();
+  desafio6 ();
 
 }
 
@@ -75,6 +76,21 @@ function desafio5V3 () {
 
   console.log(suma)
 }
+
+// Desafío de programación #6: Calcula 10! (10 factorial)
+
+function desafio6 () {
+  
+  console.log(calcularFactorial(10))
+}
+
+function calcularFactorial (numero) {
+  for (i= numero - 1; i > 0; i--) {
+    numero = numero * i;
+  }
+  return numero;
+}
+
 
 
 desafios ();
