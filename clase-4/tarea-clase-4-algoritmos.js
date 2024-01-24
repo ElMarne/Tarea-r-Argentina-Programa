@@ -8,7 +8,8 @@ function desafios () {
   desafio5V3 ();
   desafio6 ();
   desafio7 ();
-  desafio7V2 ()
+  desafio7V2 ();
+  desafio8 ();
 
 
 }
@@ -127,6 +128,20 @@ function sumaDeNumerosImpares (desde, hasta) {
 
 
 // Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
+
+function desafio8 () {
+
+  const gradosEnCelsius = Number(prompt('¿Que temperatura (en grados Celsius) quieres convertir a Fahrenheit?'))
+
+  console.log(`${gradosEnCelsius}° Celsius son ${convierteAGradosFahrenheit(gradosEnCelsius)}° Fahrenheit`)
+}
+
+function convierteAGradosFahrenheit(gradosEnCelsius) {
+  const gradosEnFahrenheit = gradosEnCelsius * (9 / 5) + 32;
+  return gradosEnFahrenheit;
+}
+
+// Desafío de programación #9: Crea una función que convierta de Fahrenheit a Celsius
 
 
 desafios ();
