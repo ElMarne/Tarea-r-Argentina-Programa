@@ -161,7 +161,19 @@ function convierteAGradosCelsius(gradosEnFahrenheit) {
 
 
 function desafio10 (){
+  const texto = 'Crea una array de la cantidad de números que quieras escribiéndolos como en el siguiente ejemplo:\n18/20/30';
+  const arrayNumeros = (prompt(texto)).split('/').map(str => Number(str));
+  
+  console.log(sumaNumerosArray(arrayNumeros))
+}
 
+function sumaNumerosArray (array) {
+  let suma = 0;
+
+  for (const numero of array) {
+    suma += numero;
+  }
+  return suma;
 }
 
 desafios ();
